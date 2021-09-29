@@ -1,12 +1,12 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyBZXqZo89Yr9oNG92hrBESKujuTjfDTKEw',
-  authDomain: 'disneyplusclone-14309.firebaseapp.com',
-  projectId: 'disneyplusclone-14309',
-  storageBucket: 'disneyplusclone-14309.appspot.com',
-  messagingSenderId: '1054088856252',
-  appId: '1:1054088856252:web:02cabf079006c5e5f6c6b9',
+  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
+  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
+  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 }
 
 const firebaseApp = firebase.initializeApp(firebaseConfig)
